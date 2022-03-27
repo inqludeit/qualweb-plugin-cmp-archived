@@ -2,6 +2,9 @@
 
 CMP management plugin for [QualWeb](https://www.github.com/qualweb/core).
 
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/inqludeit/qualweb-plugin-cmp/Unit%20tests?label=Unit%20tests)
+![nycrc config on GitHub](https://img.shields.io/nycrc/inqludeit/qualweb-plugin-cmp?config=.nycrc&preferredThreshold=functions)
+
 CMPs are software solutions for websites, managing user consent. This is
 necessary for the website to be compliant with GDPR. Often, they are simply
 referred to as "cookie banners". In our work of monitoring the websites of
