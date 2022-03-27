@@ -44,7 +44,7 @@
   "author": "Johannes L. Borresen <jlb@inqludeit.dk>",
   "license": "ISC",
   "dependencies": {
-    "@qualweb/types": "^0.7.17",
+    "@qualweb/types": "github:inqludeit/qualweb-types#dev/tellus-plugins",
     "glob": "^7.1.7",
     "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",

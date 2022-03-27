@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@istanbuljs/nyc-config-typescript': ^1.0.2
-  '@qualweb/types': ^0.7.17
+  '@qualweb/types': github:inqludeit/qualweb-types#dev/tellus-plugins
   '@tsconfig/recommended': ^1.0.1
   '@types/chai': ^4.3.0
   '@types/glob': ^7.1.4
@@ -26,7 +26,7 @@ specifiers:
   typescript: ^4.5.5
 
 dependencies:
-  '@qualweb/types': 0.7.17
+  '@qualweb/types': github.com/inqludeit/qualweb-types/cd7227f8c81e2a6037a82b809bb5cb0120f194e8
   glob: 7.2.0
   js-yaml: 4.1.0
   lodash: 4.17.21
@@ -310,13 +310,6 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
 
-  /@qualweb/types/0.7.17:
-    resolution: {integrity: sha512-u9tuB0823n/AGAWoMwECM3bpHD8Nd9kScGSnNqF9UipuEDFmYB4GjCDmstrUXwNrRZyzvMgAw/tabuLqgRGsEw==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      '@types/puppeteer': 5.4.3
-    dev: false
-
   /@tsconfig/node10/1.0.8:
     resolution: {integrity: sha512-6XFfSQmMgq0CFLY1MslA/CPUfhIL919M1rMsa5lP2P097N2Wd1sSX0tx1u4olM16fLNhtHZpRhedZJphNJqmZg==}
     dev: true
@@ -370,12 +363,6 @@ packages:
 
   /@types/node/16.11.26:
     resolution: {integrity: sha512-GZ7bu5A6+4DtG7q9GsoHXy3ALcgeIHP4NnL0Vv2wu0uUB/yQex26v0tf6/na1mm0+bS9Uw+0DFex7aaKr2qawQ==}
-
-  /@types/puppeteer/5.4.3:
-    resolution: {integrity: sha512-3nE8YgR9DIsgttLW+eJf6mnXxq8Ge+27m5SU3knWmrlfl6+KOG0Bf9f7Ua7K+C4BnaTMAh3/UpySqdAYvrsvjg==}
-    dependencies:
-      '@types/node': 16.11.26
-    dev: false
 
   /@types/yauzl/2.9.2:
     resolution: {integrity: sha512-8uALY5LTvSuHgloDVUvWP3pIauILm+8/0pDMokuDYIoNsOkSwd5AiHBTSEJjKTDcZr5z8UpgOWZkxBF4iJftoA==}
@@ -2109,3 +2096,17 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  github.com/inqludeit/qualweb-types/cd7227f8c81e2a6037a82b809bb5cb0120f194e8:
+    resolution: {tarball: https://codeload.github.com/inqludeit/qualweb-types/tar.gz/cd7227f8c81e2a6037a82b809bb5cb0120f194e8}
+    name: '@qualweb/types'
+    version: 0.7.16
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      puppeteer: 13.5.1
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - supports-color
+      - utf-8-validate
+    dev: false
