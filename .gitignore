@@ -1,0 +1,20 @@
+node_modules/
+.yalc
+yalc.lock
+
+# Rebuilt by TS.
+dist
+src/src_dist
+
+# TypeDoc output
+docs
+
+*.tsbuildinfo
+
+# Ignore archives.
+.zip
+.7z
+.tgz
+.tar.gz
+
+.nyc_output

@@ -1,0 +1,12 @@
+name: GoBasic (?)
+cookieName:
+  - CookieConsent
+  # Also a cookie with a name specific to the site's URL. MEEEEH
+selectors:
+  presence: ".cookie-container"
+  acceptAll:
+    - ".accept-all-button"
+  acceptDefault:
+    - ".cookies-technical-button"
+  rejectAll:
+    - ".cookies-technical-button"

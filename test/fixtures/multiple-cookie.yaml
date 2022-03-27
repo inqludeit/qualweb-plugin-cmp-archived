@@ -1,0 +1,8 @@
+name: successful-descriptor
+cookieName: 
+  - cookieconsent-given
+  - cookieconsent-data
+timeout: 5000
+selectors:
+  presence: "#cookie-banner-div"
+  acceptAll: "#cookie-banner-accept-all"

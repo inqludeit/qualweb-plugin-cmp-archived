@@ -1,0 +1,11 @@
+name: CookiePrompter
+cookieName: cookieOptOut
+selectors:
+  presence:
+    - ".eksCookieContainer"
+  acceptAll:
+    - ".cpAcceptBtn"
+  acceptDefault:
+    - ".cpDontAcceptBtn"
+  rejectAll:
+    - ".cpDontAcceptBtn"

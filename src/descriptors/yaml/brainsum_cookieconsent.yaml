@@ -1,0 +1,6 @@
+name: brainsum/cookieconsent
+cookieName: cconsent # Actually, two cookies seem to be relevant. This one, and "consentIDandDate"
+selectors:
+  presence: div#cconsent-modal
+  acceptAll: button.consent-give
+  rejectAll: button#ccm__footer__consent-modal-submit

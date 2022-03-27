@@ -1,0 +1,14 @@
+name: Dynamicweb
+cookieName:
+  - Dynamicweb.CookieOptInLevel
+selectors:
+  presence:
+    - form#cookieWarningForm
+    - div#cookieWarningContainer
+    - div.custom-cookie
+  acceptAll:
+    - button[onclick*="setOptInCookie(2)"]
+  acceptDefault:
+    - button[onclick*="setOptInCookie(1)"]
+  rejectAll:
+    - button[onclick*="setOptInCookie(1)"]

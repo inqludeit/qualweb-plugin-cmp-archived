@@ -1,0 +1,11 @@
+{
+  "color": true,
+  "ui": "bdd",
+  "files": [
+  ],
+  "spec": "test/**/*.spec.ts",
+  "require": [
+    "ts-node/register",
+    "tsconfig-paths/register"
+  ]
+}

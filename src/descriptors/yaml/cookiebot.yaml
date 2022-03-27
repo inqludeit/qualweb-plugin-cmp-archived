@@ -1,0 +1,25 @@
+name: CookieBot
+cookieName:
+  - CookieConsent
+  - cookiebot-consent--necessary
+timeout: 5000
+selectors:
+  presence:
+    - div#CybotCookiebotDialog
+    - div#CookieBanner
+    - div#cookiebanner
+    - div#cookieDialog
+    - div.cookie-message
+  acceptAll:
+    - "#CybotCookiebotDialogBodyButtonAccept"
+    - "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll"
+    - "#CybotCookiebotDialogBodyLevelButtonAccept" # ONLY button helbredsprofilen.dk
+    - a[onclick*="Cookiebot.submitCustomConsent"]
+  acceptDefault:
+    - "#CybotCookiebotDialogBodyButtonDecline"
+    - "#CybotCookiebotDialogBodyLevelButtonAccept"
+    - "#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll"
+  rejectAll:
+    - "#CybotCookiebotDialogBodyButtonDecline"
+    - "#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll"
+    - a[onclick="Cookiebot.dialog.submitDecline()"]

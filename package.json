@@ -1,0 +1,73 @@
+{
+  "name": "@inqludeit/qualweb-plugin-cmp",
+  "version": "0.0.0-development",
+  "description": "Consent management platform... management.",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "./dist/index.ts",
+  "directories": {
+    "lib": "src",
+    "test": "test"
+  },
+  "config": {
+    "npm_config_puppeteer_skip_download": true
+  },
+  "publishConfig": {
+    "main": "dist/src/index.js",
+    "types": "dist/src/index.d.ts",
+    "exports": {
+      ".": {
+        "default": "./dist/src/index.js",
+        "types": "./dist/src/index.d.ts"
+      },
+      "./*": {
+        "default": "./dist/src/*.js",
+        "types": "./dist/src/*.d.ts"
+      }
+    }
+  },
+  "scripts": {
+    "test": "pnpm test:unit",
+    "test:unit": "mocha",
+    "test:coverage": "nyc mocha",
+    "ts-run": "node -r ts-node/register",
+    "build": "npx tsc --build -v && npx rimraf dist/test",
+    "build:force": "npx tsc --build -f -v",
+    "clean": "npx tsc --build --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inqludeit/inqludeit-backend.git",
+    "directory": "packages/cmp"
+  },
+  "author": "Johannes L. Borresen <jlb@inqludeit.dk>",
+  "license": "ISC",
+  "dependencies": {
+    "@qualweb/types": "^0.7.17",
+    "glob": "^7.1.7",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "puppeteer": "^13.4.0",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/chai": "^4.3.0",
+    "@types/glob": "^7.1.4",
+    "@types/js-yaml": "^4.0.5",
+    "@types/lodash": "^4.14.180",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "16",
+    "chai": "^4.3.6",
+    "http-server": "^14.1.0",
+    "jquery": "^3.6.0",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.12.0",
+    "typescript": "^4.5.5"
+  }
+}

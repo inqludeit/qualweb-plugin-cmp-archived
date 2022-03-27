@@ -1,0 +1,29 @@
+{
+  "extends": "@tsconfig/recommended",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictFunctionTypes": true,
+    "allowSyntheticDefaultImports": true,
+    // "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "types": [
+      "node",
+      "mocha", /* For describing tests */
+      "@qualweb/types" /* Necessary in order to pull in types from @qualweb/core */
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+  ],
+}

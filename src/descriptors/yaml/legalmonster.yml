@@ -1,0 +1,11 @@
+name: LegalMonster
+cookieName: legalmonster-cookie-consent
+selectors:
+  presence:
+    - .lm-cookie-wall-container
+  acceptAll:
+    - button#lm-accept-all
+  acceptDefault:
+    - button#lm-accept-necessary
+  rejectAll:
+    - button#lm-accept-necessary

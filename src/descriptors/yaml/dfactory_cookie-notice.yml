@@ -1,0 +1,11 @@
+name: dfactoryplugins/cookie-notice
+cookieName: cookie_notice_accepted
+selectors:
+  presence:
+    - div#cookie-notice
+    - span#cn-notice-text
+  acceptAll:
+    - a#cn-accept-cookie
+    - span#cn-close-notice
+  rejectAll:
+    - a#cn-refuse-cookie

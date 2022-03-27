@@ -1,0 +1,16 @@
+name: cookie-script.com
+cookieName:
+  - cookie-agreed
+  - cookie-agreed-version
+  - cookie-agreed-categories
+selectors:
+  presence:
+    - div#cookiescript_injected
+    - div#cookiescript_header
+    - div#cookiescript_description
+    - div#cookiescript_checkboxs
+    - div#cookiescript_buttons
+  acceptAll:
+    - div#cookiescript_accept
+  rejectAll:
+    - div#cookiescript_reject

@@ -1,0 +1,11 @@
+name: Complianz
+cookieName: cmplz_functional
+selectors:
+  presence:
+    - div.cmplz-cookiebanner
+  acceptAll:
+    - button.cmplz-accept
+  acceptDefault:
+    - button.cmplz-deny
+  rejectAll:
+    - button.cmplz-deny

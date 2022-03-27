@@ -1,0 +1,10 @@
+name: moove (wordpress)
+cookieName: moove_gdpr_popup
+selectors:
+  presence:
+    - aside#moove_gdpr_cookie_info_bar
+    - div.moove-gdpr-info-bar-container
+  acceptAll:
+    - button.moove-gdpr-infobar-allow-all
+  rejectAll:
+    - button.moove-gdpr-infobar-reject-btn

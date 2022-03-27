@@ -1,0 +1,14 @@
+name: Drupal(?)
+cookieName:
+  - cookie-agreed
+  - cookie-agreed-version
+  - cookie-agreed-categories
+selectors:
+  presence:
+    - div.eu-cookie-compliance-banner
+    - body.eu-cookie-compliance-popup-open
+  acceptAll:
+    - button.agree-button
+    - .eucc-button__accept
+  rejectAll:
+    - .eu-cookie-compliance-only-required-button

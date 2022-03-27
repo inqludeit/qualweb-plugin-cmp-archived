@@ -1,0 +1,11 @@
+name: wimagguc/jquery-eu-cookie-law-popup
+cookieName:
+  - cookieMessageStatus
+  - EU_COOKIE_LAW_CONSENT
+selectors:
+  presence:
+    - div.eupopup-container
+  acceptAll:
+    - a.eupopup-button.eupopup-button_1
+  rejectAll:
+    - a.eupopup-button.eupopup-button_1

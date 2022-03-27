@@ -1,0 +1,5 @@
+name: CookieBot
+selectors:
+  presence: "#CybotCookiebotDialog"
+  acceptDefault: "#CybotCookiebotDialogBodyButtonDecline"
+  rejectAll: "#CybotCookiebotDialogBodyButtonDecline"

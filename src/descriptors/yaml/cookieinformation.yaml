@@ -1,0 +1,18 @@
+name: cookieinformation.com
+cookieName: CookieInformationConsent
+selectors:
+  presence:
+    - div#coiOverlay
+    - div#coiConsentBanner
+    - .coi-banner__summary
+  acceptAll:
+    - .coi-banner__accept
+    - button.coi-consent-banner__agree-button
+    - button[onclick*="CookieInformation.submitAllCategories()"] # Herlevhospital.dk and others
+    - button[onpress*="CookieInformation.submitAllCategories()"] # Herlevhospital.dk and others
+  acceptDefault:
+    - button[onclick*="CookieInformation.submitConsent()"] # Herlevhospital.dk and others
+  rejectAll:
+    - "#declineButton"
+    - button.coi-consent-banner__decline-button
+    - button[onclick*="CookieInformation.declineAllCategories()"] # Herlevhospital.dk and others
