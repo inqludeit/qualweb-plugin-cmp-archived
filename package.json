@@ -37,7 +37,7 @@
     "test:unit": "mocha",
     "test:coverage": "nyc mocha",
     "ts-run": "node -r ts-node/register",
-    "build": "pnpm tsc --build -v && npx rimraf dist/test",
+    "build": "pnpm tsc --build -v",
     "build:force": "pnpm tsc --build -f -v",
     "clean": "pnpm tsc --build --clean",
     "prepublishOnly": "pnpm build"
