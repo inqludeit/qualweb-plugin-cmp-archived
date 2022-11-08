@@ -32,8 +32,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
-        env:
-          credentials: ${{ secrets.NPM_PACKAGE }}
+      env:
+        credentials: ${{ secrets.NPM_PACKAGE }}
 
     - run: pnpm install
     - run: pnpm build
