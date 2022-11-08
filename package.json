@@ -14,17 +14,20 @@
   "config": {
     "npm_config_puppeteer_skip_download": true
   },
+  "files": [
+    "dist"
+  ],
   "publishConfig": {
     "main": "dist/src/index.js",
     "types": "dist/src/index.d.ts",
     "exports": {
       ".": {
-        "default": "./dist/src/index.js",
-        "types": "./dist/src/index.d.ts"
+        "default": "./dist/index.js",
+        "types": "./dist/index.d.ts"
       },
       "./*": {
-        "default": "./dist/src/*.js",
-        "types": "./dist/src/*.d.ts"
+        "default": "./dist/*.js",
+        "types": "./dist/*.d.ts"
       }
     }
   },
